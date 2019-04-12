@@ -23,7 +23,7 @@ download_docker_installer(){
 install_and_start_docker(){
     version_to_install="$1"
     version_to_install= [ -z "$1" ] && version_to_install=$DOCKER_VERSION
-    INSTALLER_NAME="docker-$version_to_install-ce.tgz"
+    INSTALLER_NAME="docker-$version_to_install.tgz"
     FULL_PATH="$INSTALLER_PATH/$INSTALLER_NAME"
 
 	echo "Installing docker version $version_to_install"
